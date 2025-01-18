@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "pnpm generate",
+    "dx": "pnpm generate",
     "migrate": "prisma migrate dev",
     "migrate:prod": "prisma migrate deploy",
     "generate": "prisma generate",

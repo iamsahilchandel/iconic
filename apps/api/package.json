@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist/server.js",
     "build": "rm -rf dist && tsc -b",
-    "dev": "nodemon src/server.ts --PORT 3003"
+    "dev": "nodemon src/server.ts"
   },
   "keywords": [],
   "author": "",

@@ -3,9 +3,20 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
+    "./alert-dialog": "./src/alert-dialog.tsx",
     "./button": "./src/button.tsx",
     "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
+    "./code": "./src/code.tsx",
+    "./dialog": "./src/dialog.tsx",
+    "./dropdown-menu": "./src/dropdown-menu.tsx",
+    "./input": "./src/input.tsx",
+    "./label": "./src/label.tsx",
+    "./scroll-area": "./src/scroll-area.tsx",
+    "./select": "./src/select.tsx",
+    "./separator": "./src/separator.tsx",
+    "./sheet": "./src/sheet.tsx",
+    "./skeleton": "./src/skeleton.tsx",
+    "./textarea": "./src/textarea.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -35,7 +46,6 @@
     "lucide-react": "^0.473.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwind-merge": "^2.6.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwind-merge": "^2.6.0"
   }
 }

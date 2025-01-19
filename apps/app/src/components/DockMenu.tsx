@@ -42,7 +42,7 @@ export function DockMenu({ onInsertItem }: DockMenuProps) {
     <motion.div
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
-      className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2 p-2 rounded-xl bg-black/30 backdrop-blur-xl border border-white/10"
+      className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-4 px-4 py-2 rounded-xl bg-black/30 backdrop-blur-xl border border-white/10"
     >
       {menuItems.map((item) => (
         <DockMenuButton
@@ -51,7 +51,7 @@ export function DockMenu({ onInsertItem }: DockMenuProps) {
           onInsertItem={onInsertItem}
           mouseX={mouseX}
         >
-          <item.icon className="h-5 w-5" />
+          <item.icon className="h-4 w-4" />
         </DockMenuButton>
       ))}
     </motion.div>
@@ -91,7 +91,7 @@ function DockMenuButton({
     <Button
       variant="ghost"
       size="icon"
-      className="text-white hover:bg-white/10 rounded-full"
+      className="text-white hover:bg-white/10 rounded-full p-2"
       onClick={() => onInsertItem(nodeType)}
       draggable
       onDragStart={(e) => onDragStart(e, nodeType)}
